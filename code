@@ -1,0 +1,43 @@
+package com.helloworld;
+
+class kapsul_kasir{
+    private String nama_barang;
+    private int jumlah_barang;
+    private int harga_barang;
+    private int total_harga;
+
+    public int get_harga(){return harga_barang;}
+    public String get_nama(){return nama_barang; }
+    public int get_total(){
+        return total_harga;
+    }
+    public int get_jumlah(){
+        return jumlah_barang;
+    }
+    public void set_harga(int harga_baru){
+        harga_barang = harga_baru;
+    }
+    public void set_nama(String nama_baru){
+        nama_barang = nama_baru;
+    }
+    public void set_total(int total_baru){
+        total_harga = total_baru;
+    }
+    public void set_jumlah(int jumlah_baru){
+        jumlah_barang = jumlah_baru;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        kapsul_kasir obj = new kapsul_kasir();
+        obj.set_nama("sabun");
+        obj.set_harga(2000);
+        obj.set_jumlah(5);
+        obj.set_total(10000);
+
+        System.out.println("Nama barang    : " + obj.get_nama());
+        System.out.println("Harga barang   : " + obj.get_harga());
+        System.out.println("Jumlah barang  : " + obj.get_jumlah());
+        System.out.println("Total Harga    : " + obj.get_total());
+    }
+}
